@@ -1,0 +1,11 @@
+﻿<Window x:Class="image.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid Height="89" HorizontalAlignment="Left" Margin="0,154,0,0" Name="grid1" VerticalAlignment="Top" Width="102" />
+        <Image Height="89" HorizontalAlignment="Left" Margin="0,154,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="102" Source="/image;component/Images/arrow.png" />
+        <Button Height="89" HorizontalAlignment="Left" Margin="0,154,0,0" Name="button1" VerticalAlignment="Top" Width="102" BorderThickness="100" Focusable="True" ClipToBounds="True" Opacity="0" Click="button1_Click" />
+        <Ellipse Height="138" HorizontalAlignment="Left" Margin="185,105,0,0" Name="ellipse1" Stroke="Black" VerticalAlignment="Top" Width="160" Fill="#FFFF2424" OpacityMask="#FF00FF90" />
+    </Grid>
+</Window>

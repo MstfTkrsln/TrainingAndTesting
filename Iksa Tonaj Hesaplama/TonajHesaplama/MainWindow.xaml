@@ -1,0 +1,43 @@
+﻿<Window x:Class="TonajHesaplama.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Iksa Tonaj Hesaplama" Height="455" Width="458" Background="#E4F1FE" ResizeMode="NoResize" Icon="/TonajHesaplama;component/mainicon.png">
+    <Grid Height="419">
+        <Menu Width="52" Height="25" HorizontalAlignment="Right" VerticalAlignment="Top" Background="#ECF0F1" BorderThickness="1" BorderBrush="Black" >
+
+            <MenuItem Header="About" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#F2F1EF" Click="MenuItem_Click">
+
+               
+            </MenuItem>
+
+        </Menu>
+     
+            <Label Width="100" Height="25" Margin="12,26,0,366" HorizontalAlignment="Left" FontWeight="Bold">32'lik Demir</Label>
+            <TextBox Name="txtDemir32" Width="150" Height="25" Margin="111,26,0,365" HorizontalAlignment="Left"></TextBox>
+
+        <Label Width="100" Height="25" Margin="12,71,0,320" HorizontalAlignment="Left" FontWeight="Bold">26'lik Demir</Label>
+        <TextBox Name="txtDemir26" Width="150" Height="25" Margin="111,71,0,320" HorizontalAlignment="Left"></TextBox>
+
+        <Label Width="100" Height="25" Margin="12,114,0,277" HorizontalAlignment="Left" FontWeight="Bold">12'lik Demir</Label>
+        <TextBox Name="txtDemir12" Width="150" Height="25" Margin="111,116,0,275" HorizontalAlignment="Left"></TextBox>
+
+        <Label Width="100" Height="25" Margin="12,161,0,230" HorizontalAlignment="Left" FontWeight="Bold">80*80 Köşebent</Label>
+        <TextBox Name="txtKosebent80" Width="150" Height="25" Margin="111,161,0,230" HorizontalAlignment="Left"></TextBox>
+
+
+        <Label Width="100" Height="25" Margin="12,206,0,185" HorizontalAlignment="Left" FontWeight="Bold">Kaynak Ağırlığı</Label>
+        <TextBox Name="txtKaynak" Width="150" Height="25" Margin="111,206,0,185" HorizontalAlignment="Left">5</TextBox>
+
+
+        <Label Content="metre" Height="25" HorizontalAlignment="Left" Margin="211,26,0,365" Width="50" />
+        <Label Content="metre" Height="25" HorizontalAlignment="Left" Margin="211,71,0,320" Width="50" />
+        <Label Content="metre" Height="25" HorizontalAlignment="Left" Margin="211,114,0,277" Width="50" />
+        <Label Content="metre" Height="25" HorizontalAlignment="Left" Margin="211,161,0,230" Width="50" />
+
+        <Button Content="Hesapla" Height="35" HorizontalAlignment="Left" Margin="285,196,0,0" Name="btnHesapla" VerticalAlignment="Top" Width="130" FontSize="14" FontWeight="Bold" FontFamily="Tahoma" Background="LightSteelBlue" Click="btnHesapla_Click"></Button>
+        <Label Content="%" Height="25" HorizontalAlignment="Left" Margin="225,206,0,185" Width="23"  />
+        
+        <Label Content="Total Ağırlık" FontWeight="Bold" HorizontalAlignment="Left" Margin="137,265,0,114" Width="124" FontSize="18" />
+        <Label Content="" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="137,308,0,71" Name="lblTotal" Width="124" FontFamily="Tahoma"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="Firebrick" />
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+﻿<Application x:Class="DataBindIslemleri.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="Window8.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

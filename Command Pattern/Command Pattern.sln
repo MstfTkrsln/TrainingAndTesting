@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command Pattern", "Command Pattern\Command Pattern.csproj", "{6A5C7CF2-39EC-4144-A275-4A24EDA82EF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command Pattern Winform", "Command Pattern Winform\Command Pattern Winform.csproj", "{70EA8B28-B91C-4E93-84A5-152DC8B43798}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A5C7CF2-39EC-4144-A275-4A24EDA82EF9}.Debug|x86.ActiveCfg = Debug|x86
+		{6A5C7CF2-39EC-4144-A275-4A24EDA82EF9}.Debug|x86.Build.0 = Debug|x86
+		{6A5C7CF2-39EC-4144-A275-4A24EDA82EF9}.Release|x86.ActiveCfg = Release|x86
+		{6A5C7CF2-39EC-4144-A275-4A24EDA82EF9}.Release|x86.Build.0 = Release|x86
+		{70EA8B28-B91C-4E93-84A5-152DC8B43798}.Debug|x86.ActiveCfg = Debug|x86
+		{70EA8B28-B91C-4E93-84A5-152DC8B43798}.Debug|x86.Build.0 = Debug|x86
+		{70EA8B28-B91C-4E93-84A5-152DC8B43798}.Release|x86.ActiveCfg = Release|x86
+		{70EA8B28-B91C-4E93-84A5-152DC8B43798}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

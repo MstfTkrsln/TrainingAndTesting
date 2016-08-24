@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="Http://wwww.Northwind.com/Services/CustomerService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Http://wwww.Northwind.com/Services/CustomerService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Http://wwww.Northwind.com/Services/CustomerService/Imports">
+      <xsd:import schemaLocation="http://localhost:59953/CustomerService.svc?xsd=xsd0" namespace="Http://wwww.Northwind.com/Services/CustomerService" />
+      <xsd:import schemaLocation="http://localhost:59953/CustomerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59953/CustomerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MyServiceApp" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CustomerService_GetCustomerByCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByCountry" />
+  </wsdl:message>
+  <wsdl:message name="CustomerService_GetCustomerByCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerService_GetCustomerByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByName" />
+  </wsdl:message>
+  <wsdl:message name="CustomerService_GetCustomerByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerService_AddCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomer" />
+  </wsdl:message>
+  <wsdl:message name="CustomerService_AddCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CustomerService">
+    <wsdl:operation name="GetCustomerByCountry">
+      <wsdl:input wsaw:Action="Http://wwww.Northwind.com/Services/CustomerService/CustomerService/GetCustomerByCountry" message="tns:CustomerService_GetCustomerByCountry_InputMessage" />
+      <wsdl:output wsaw:Action="Http://wwww.Northwind.com/Services/CustomerService/CustomerService/GetCustomerByCountryResponse" message="tns:CustomerService_GetCustomerByCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByName">
+      <wsdl:input wsaw:Action="Http://wwww.Northwind.com/Services/CustomerService/CustomerService/GetCustomerByName" message="tns:CustomerService_GetCustomerByName_InputMessage" />
+      <wsdl:output wsaw:Action="Http://wwww.Northwind.com/Services/CustomerService/CustomerService/GetCustomerByNameResponse" message="tns:CustomerService_GetCustomerByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <wsdl:input wsaw:Action="Http://wwww.Northwind.com/Services/CustomerService/CustomerService/AddCustomer" message="tns:CustomerService_AddCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="Http://wwww.Northwind.com/Services/CustomerService/CustomerService/AddCustomerResponse" message="tns:CustomerService_AddCustomer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

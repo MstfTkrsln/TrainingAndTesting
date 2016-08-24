@@ -1,0 +1,14 @@
+﻿<Window x:Class="BerskaClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Berska" Height="442" Width="577" Background="#FFEBEBEB">
+    <Grid OpacityMask="{x:Null}">
+        <GroupBox Header="Stores" Height="150" HorizontalAlignment="Left" Margin="12,12,0,0" Name="groupBox1" VerticalAlignment="Top" Width="212" BorderBrush="Blue">
+            <Grid>
+                <Button Content="Save" Height="42" HorizontalAlignment="Left" Margin="39,69,0,0" Name="btnSave" VerticalAlignment="Top" Width="123" FontWeight="Bold" Click="btnSave_Click" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="20,35,0,0" Name="txtStoreName" VerticalAlignment="Top" Width="162" />
+                <Label Content="Store Name" Height="28" HorizontalAlignment="Left" Margin="62,6,0,0" Name="lblStoreName" VerticalAlignment="Top" FontWeight="Bold" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

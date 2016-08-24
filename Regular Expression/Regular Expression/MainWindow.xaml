@@ -1,0 +1,10 @@
+﻿<Window x:Class="Regular_Expression.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="750" Width="994">
+    <Grid>
+        <Button Content="Get HTML" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="btnHtml" VerticalAlignment="Top" Width="75" Click="btnHtml_Click" />
+        <TextBox Height="471" HorizontalAlignment="Left" Margin="93,13,0,0" Name="txtNews" VerticalAlignment="Top" Width="856" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" />
+        <TextBox Height="197" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Auto" Margin="93,502,0,0" Name="txtFind" TextWrapping="Wrap" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto" Width="856" />
+    </Grid>
+</Window>

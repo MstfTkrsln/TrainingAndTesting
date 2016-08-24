@@ -1,0 +1,12 @@
+﻿<Window x:Class="DataBindIslemleri.Window2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="XmlDataProvider ile Xml verilerine basit bağlanmak" Height="150" Width="290" WindowStartupLocation="CenterScreen">    
+    <Grid>
+        <Grid.Resources>
+            <XmlDataProvider x:Key="UrunlerProvider" Source="Urunler.xml"/>
+        </Grid.Resources>
+        <ComboBox Height="28" Margin="23,42,60,0" Name="cmbUrunler" VerticalAlignment="Top" ItemsSource="{Binding Source={StaticResource UrunlerProvider},XPath=/Depo/Urun/Ad}" FontSize="13" FontWeight="Bold" />
+        <Label Height="23" HorizontalAlignment="Left" Margin="18,12,0,0" Name="label1" VerticalAlignment="Top" Width="120" FontSize="12" FontWeight="Bold">Ürünler</Label>        
+    </Grid>
+</Window>

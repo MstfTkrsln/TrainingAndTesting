@@ -1,0 +1,25 @@
+﻿<Window x:Class="DataBindIslemleri.Window8"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window8" Height="300" Width="440">
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="KategoriVerisi">
+                <StackPanel>
+                    <TextBlock Text="{Binding Path=Name}"/>
+                </StackPanel>
+            </DataTemplate>
+        <DataTemplate x:Key="UrunVerisi">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="{Binding Path=ProductID}"/>
+                    <Label Content="{Binding Path=Name}"/>
+                    <Label Content="{Binding Path=ListPrice}"/>
+                </StackPanel>
+            </DataTemplate>
+        </Grid.Resources>
+        <ComboBox Height="25" HorizontalAlignment="Left" Margin="12,35,0,0" Name="cmbAltKategori" VerticalAlignment="Top" Width="120" ItemsSource="{Binding}" ItemTemplate="{StaticResource KategoriVerisi}" IsSynchronizedWithCurrentItem="True"/>
+        <Label Height="23" HorizontalAlignment="Left" Margin="10,12,0,0" Name="label1" VerticalAlignment="Top" Width="120">Alt Kategori</Label>
+        <ListBox Margin="166,35,10,19" Name="lstUrunler" ItemsSource="{Binding SubCatToProduct}" ItemTemplate="{StaticResource UrunVerisi}" />
+        <Label Height="23" Margin="166,12,132,0" Name="label2" VerticalAlignment="Top">Urunler</Label>
+    </Grid>
+</Window>

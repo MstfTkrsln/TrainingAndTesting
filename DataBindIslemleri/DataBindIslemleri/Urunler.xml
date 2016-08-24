@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Depo>
+  <Urun id="1000">
+    <Ad>Ekran Kartı(VGA)</Ad>
+    <BirimFiyat>35</BirimFiyat>
+    <StokMiktari>100</StokMiktari>
+    <Durum>OK.bmp</Durum>
+    <Kategori>Yedek Parça</Kategori>
+  </Urun>
+  <Urun id="1001">
+    <Ad>Intel Core Duo İşlemci (CPU)</Ad>
+    <BirimFiyat>90</BirimFiyat>
+    <StokMiktari>125</StokMiktari>
+    <Durum>OK.bmp</Durum>
+    <Kategori>Yedek Parça</Kategori>
+  </Urun>
+  <Urun id="1002">
+    <Ad>17Inch LCD Monitor</Ad>
+    <BirimFiyat>150</BirimFiyat>
+    <StokMiktari>35</StokMiktari>
+    <Durum>Warning.bmp</Durum>
+    <Kategori>Ekran</Kategori>
+  </Urun>
+  <Urun id="1003">
+    <Ad>250 GB Usb Harddisk</Ad>
+    <BirimFiyat>150</BirimFiyat>
+    <StokMiktari>90</StokMiktari>
+    <Durum>Serious.bmp</Durum>
+    <Kategori>Depolama Aygıtı</Kategori>
+  </Urun>
+  <Urun id="1004">
+    <Ad>1 GB Usb Flash Bellek</Ad>
+    <BirimFiyat>28</BirimFiyat>
+    <StokMiktari>300</StokMiktari>
+    <Durum>Warning.bmp</Durum>
+    <Kategori>Depolama Aygıtı</Kategori>
+  </Urun>
+</Depo> 

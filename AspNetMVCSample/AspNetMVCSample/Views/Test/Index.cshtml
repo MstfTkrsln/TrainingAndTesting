@@ -1,0 +1,89 @@
+﻿@using AspNetMVCSample.Models
+@model IEnumerable<AspNetMVCSample.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {id = item.StudentId}) |
+                @Html.ActionLink("Details", "Details", new {id = item.StudentId}) |
+                @Html.ActionLink("Delete", "Delete", new {id = item.StudentId})
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+@{
+    var date = DateTime.Now.ToShortDateString();
+    string message = "Hello World!";
+    @:Today's date is: @date <br />
+    @message
+}
+
+
+<h2>Today's date is: @date </h2>
+<h3>@message</h3>
+
+
+@Html.TextBoxFor(Model=> Model.FirstOrDefault().StudentName,new { @class = "form-control" })
+
+@Html.TextAreaFor(Model => Model.FirstOrDefault().StudentName, new { @class = "form-control" })
+
+@Html.CheckBoxFor(Model => Model.FirstOrDefault().isGraduated )
+
+@Html.RadioButtonFor(Model => Model.FirstOrDefault().GenderStr, "Male")
+@Html.RadioButtonFor(Model => Model.FirstOrDefault().GenderStr, "Female")
+
+@Html.DropDownListFor(el => Model.FirstOrDefault().Gender, new SelectList(Enum.GetValues(typeof(Gender))),"Select Gender")
+
+@Html.HiddenFor(Model => Model.FirstOrDefault().StudentId)
+<br /><br /><br />
+
+StudentId: @Html.EditorFor(Model => Model.FirstOrDefault().StudentId)<br/>
+Student Name:   @Html.EditorFor(Model => Model.FirstOrDefault().StudentName)<br />
+Age:            @Html.EditorFor(Model => Model.FirstOrDefault().Age)<br />
+Password:       @Html.EditorFor(Model => Model.FirstOrDefault().Password)<br />
+isNewlyEnrolled: @Html.EditorFor(Model => Model.FirstOrDefault().isGraduated)<br />
+Gender:         @Html.EditorFor(Model => Model.FirstOrDefault().Gender)<br />
+
+
+
+
+
+
+
+  
+
+

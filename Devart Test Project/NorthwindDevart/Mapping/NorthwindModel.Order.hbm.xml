@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="NorthwindDevart" namespace="NorthwindDevart" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Order" table="Orders" schema="dbo">
+    <id name="OrderID" type="Int32">
+      <column name="OrderID" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="OrderDate" type="DateTime">
+      <column name="OrderDate" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="RequiredDate" type="DateTime">
+      <column name="RequiredDate" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="ShippedDate" type="DateTime">
+      <column name="ShippedDate" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="ShipVia" type="Int32">
+      <column name="ShipVia" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="Freight" type="Decimal">
+      <column name="Freight" default="0" not-null="false" precision="19" scale="4" sql-type="money" />
+    </property>
+    <property name="ShipName" type="String">
+      <column name="ShipName" not-null="false" length="40" sql-type="nvarchar" />
+    </property>
+    <property name="ShipAddress" type="String">
+      <column name="ShipAddress" not-null="false" length="60" sql-type="nvarchar" />
+    </property>
+    <property name="ShipCity" type="String">
+      <column name="ShipCity" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="ShipRegion" type="String">
+      <column name="ShipRegion" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="ShipPostalCode" type="String">
+      <column name="ShipPostalCode" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="ShipCountry" type="String">
+      <column name="ShipCountry" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <many-to-one name="Customer" class="Customer">
+      <column name="CustomerID" not-null="false" length="5" sql-type="nchar" />
+    </many-to-one>
+    <many-to-one name="Employee" class="Employee">
+      <column name="EmployeeID" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="OrderDetails" inverse="true" generic="true">
+      <key>
+        <column name="OrderID" />
+      </key>
+      <one-to-many class="OrderDetail" />
+    </set>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="DataBindIslemleri.Window4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DataTemplete Yardımıyla Xml verisine bağlanma" Height="154" Width="384">
+    <Grid>
+        <Grid.Resources>
+            <XmlDataProvider x:Key="UrunVerileri" Source="Urunler.xml"/>
+        </Grid.Resources>
+        <ComboBox Height="40" Margin="21,37,15,0" Name="cmbUrunler" VerticalAlignment="Top" ItemsSource="{Binding Source={StaticResource UrunVerileri},XPath=Depo/Urun}" FontSize="14" FontWeight="Bold">            
+            <ComboBox.ItemTemplate>                
+                <DataTemplate>
+                    <TextBlock>
+                        <Label>
+                            <Label.Content>
+                                <Binding XPath="Ad"/>
+                            </Label.Content>
+                        </Label>
+                        <Button>
+                            <Button.Content>
+                                <Binding XPath="StokMiktari"/>
+                            </Button.Content>
+                        </Button>
+                        <Image>
+                            <Image.Source>
+                                <Binding XPath="Durum"/>
+                            </Image.Source>
+                        </Image>
+                        <Button Name="btnSiparisVer" Content="Sipariş Ver" FontSize="10" FontWeight="Bold" Background="Black" Foreground="Gold"/>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>            
+        </ComboBox>        
+    </Grid>
+</Window>

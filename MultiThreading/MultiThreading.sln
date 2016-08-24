@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading", "MultiThreading\MultiThreading.csproj", "{CC6ED1D8-4260-4F74-999E-76510ABAF5E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threading", "Threading\Threading.csproj", "{B7EB47EC-A1FF-412A-B00D-322396E81C53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong", "PingPong\PingPong.csproj", "{40B77417-0C39-4538-A2EB-A0BB2720FD74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex", "Mutex\Mutex.csproj", "{C97DFAF8-5397-4B8A-9906-3DB1EF4FA177}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC6ED1D8-4260-4F74-999E-76510ABAF5E5}.Debug|x86.ActiveCfg = Debug|x86
+		{CC6ED1D8-4260-4F74-999E-76510ABAF5E5}.Debug|x86.Build.0 = Debug|x86
+		{CC6ED1D8-4260-4F74-999E-76510ABAF5E5}.Release|x86.ActiveCfg = Release|x86
+		{CC6ED1D8-4260-4F74-999E-76510ABAF5E5}.Release|x86.Build.0 = Release|x86
+		{B7EB47EC-A1FF-412A-B00D-322396E81C53}.Debug|x86.ActiveCfg = Debug|x86
+		{B7EB47EC-A1FF-412A-B00D-322396E81C53}.Debug|x86.Build.0 = Debug|x86
+		{B7EB47EC-A1FF-412A-B00D-322396E81C53}.Release|x86.ActiveCfg = Release|x86
+		{B7EB47EC-A1FF-412A-B00D-322396E81C53}.Release|x86.Build.0 = Release|x86
+		{40B77417-0C39-4538-A2EB-A0BB2720FD74}.Debug|x86.ActiveCfg = Debug|x86
+		{40B77417-0C39-4538-A2EB-A0BB2720FD74}.Debug|x86.Build.0 = Debug|x86
+		{40B77417-0C39-4538-A2EB-A0BB2720FD74}.Release|x86.ActiveCfg = Release|x86
+		{40B77417-0C39-4538-A2EB-A0BB2720FD74}.Release|x86.Build.0 = Release|x86
+		{C97DFAF8-5397-4B8A-9906-3DB1EF4FA177}.Debug|x86.ActiveCfg = Debug|x86
+		{C97DFAF8-5397-4B8A-9906-3DB1EF4FA177}.Debug|x86.Build.0 = Debug|x86
+		{C97DFAF8-5397-4B8A-9906-3DB1EF4FA177}.Release|x86.ActiveCfg = Release|x86
+		{C97DFAF8-5397-4B8A-9906-3DB1EF4FA177}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

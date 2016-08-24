@@ -1,0 +1,10 @@
+﻿<Window x:Class="CacheConceptApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Test Window" Height="350" Width="525">
+    <Grid>
+        <Button Content="Add Cache Items" Height="35" HorizontalAlignment="Left" Margin="40,12,0,0" Name="buttonAddCache" VerticalAlignment="Top" Width="176" Click="buttonAddCache_Click" />
+        <Button Content="Get Cache Items" Height="35" Margin="0,12,45,0" Name="buttonGetCache" VerticalAlignment="Top" HorizontalAlignment="Right" Width="181" Click="buttonGetCache_Click" />
+        <ListBox Height="227" HorizontalAlignment="Left" Margin="12,72,0,0" Name="lstHistories" VerticalAlignment="Top" Width="479" />
+    </Grid>
+</Window>

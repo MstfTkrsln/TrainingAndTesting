@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate EventHandler", "Delegate EventHandler\Delegate EventHandler.csproj", "{9289B53F-9B31-4F82-A52C-9F190BA08152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csproj", "{4822C87B-5B9C-4885-932E-E985369E12E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9289B53F-9B31-4F82-A52C-9F190BA08152}.Debug|x86.ActiveCfg = Debug|x86
+		{9289B53F-9B31-4F82-A52C-9F190BA08152}.Debug|x86.Build.0 = Debug|x86
+		{9289B53F-9B31-4F82-A52C-9F190BA08152}.Release|x86.ActiveCfg = Release|x86
+		{9289B53F-9B31-4F82-A52C-9F190BA08152}.Release|x86.Build.0 = Release|x86
+		{4822C87B-5B9C-4885-932E-E985369E12E4}.Debug|x86.ActiveCfg = Debug|x86
+		{4822C87B-5B9C-4885-932E-E985369E12E4}.Debug|x86.Build.0 = Debug|x86
+		{4822C87B-5B9C-4885-932E-E985369E12E4}.Release|x86.ActiveCfg = Release|x86
+		{4822C87B-5B9C-4885-932E-E985369E12E4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

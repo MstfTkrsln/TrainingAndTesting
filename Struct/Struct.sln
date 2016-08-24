@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Struct", "Struct\Struct.csproj", "{ED28157E-FB6A-48F3-8A86-B0B832216F26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Struct Customer", "Struct Customer\Struct Customer.csproj", "{013296B1-3222-4B9A-8995-9D1660808AA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED28157E-FB6A-48F3-8A86-B0B832216F26}.Debug|x86.ActiveCfg = Debug|x86
+		{ED28157E-FB6A-48F3-8A86-B0B832216F26}.Debug|x86.Build.0 = Debug|x86
+		{ED28157E-FB6A-48F3-8A86-B0B832216F26}.Release|x86.ActiveCfg = Release|x86
+		{ED28157E-FB6A-48F3-8A86-B0B832216F26}.Release|x86.Build.0 = Release|x86
+		{013296B1-3222-4B9A-8995-9D1660808AA6}.Debug|x86.ActiveCfg = Debug|x86
+		{013296B1-3222-4B9A-8995-9D1660808AA6}.Debug|x86.Build.0 = Debug|x86
+		{013296B1-3222-4B9A-8995-9D1660808AA6}.Release|x86.ActiveCfg = Release|x86
+		{013296B1-3222-4B9A-8995-9D1660808AA6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

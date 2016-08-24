@@ -1,0 +1,19 @@
+﻿<Window x:Class="Car_Building__interface_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="281" Width="423" Loaded="Window_Loaded">
+    <Grid Height="248" Width="403">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="403*" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Height="139" HorizontalAlignment="Left" Margin="154,44,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="200" Grid.Column="1" />
+        <Button Content="Create" Height="42" HorizontalAlignment="Left" Margin="12,141,0,0" Name="button1" VerticalAlignment="Top" Width="100" Foreground="#FFFF0D0D" FontWeight="Bold" FontSize="14" Click="button1_Click" IsEnabled="True" Grid.Column="1" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="234,72,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" Text="" Grid.Column="1" />
+        <Label Content="Car" Height="28" HorizontalAlignment="Left" Margin="44,44,0,0" Name="label1" VerticalAlignment="Top" Width="49" Foreground="#FFFF0707" FontSize="14" BorderBrush="#FF000064" Background="#FFEFEFF8" FlowDirection="LeftToRight" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" />
+        <Label Background="#FFEFEFF8" BorderBrush="#FF000064" Content="Color" FlowDirection="LeftToRight" FontSize="14" Foreground="#FFFF0707" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="176,67,0,0" Name="label2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="49" Grid.Column="1" />
+        <Label Background="#FFEFEFF8" BorderBrush="#FF000064" Content="Door" FlowDirection="LeftToRight" FontSize="14" Foreground="#FFFF0707" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="176,120,0,0" Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="49" Grid.Column="1" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="234,125,0,0" Name="comboBox2" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" IsEditable="False" ItemStringFormat="" DataContext="{Binding StringFormat=\{0:F0\}}"></ComboBox>
+        <ComboBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="12,92,0,0" Name="comboBox3" VerticalAlignment="Top" Width="120" />
+    </Grid>
+</Window>

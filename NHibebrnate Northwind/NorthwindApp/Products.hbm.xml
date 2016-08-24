@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" assembly="NorthwindClient" namespace="NorthwindClient">
+
+  <class name="NorthwindClient.Products,NorthwindClient">
+  
+
+    <id name="ProductID" column="ProductID">
+      <generator class="identity" />
+    </id>
+
+    <property name="ProductName"/>
+    <property name="SupplierID"/>
+    <property name="CategoryID"/>
+    <property name="QuantityPerUnit"/>
+    <property name="UnitPrice"/>
+    <property name="UnitsInStock"/>
+    <property name="UnitsOnOrder"/>
+    <property name="ReorderLevel"/>
+    <property name="Discontinued"/>
+
+  </class>
+
+</hibernate-mapping>

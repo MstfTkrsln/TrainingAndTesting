@@ -1,0 +1,32 @@
+﻿<Window x:Class="Linq_Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" Loaded="Window_Loaded" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="390" d:DesignWidth="603" SizeToContent="WidthAndHeight" x:Name="MWindow"
+        x:FieldModifier="public">
+    <Grid Height="348" Width="581">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="383*" />
+            <ColumnDefinition Width="198*" />
+        </Grid.ColumnDefinitions>
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,14,169,0" Name="txtAd" VerticalAlignment="Top" Width="120" />
+        <Label Content="Ad" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,57,169,0" Name="txtSoyad" VerticalAlignment="Top" Width="120" />
+        <Label Content="Soyad" Height="28" HorizontalAlignment="Left" Margin="12,55,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,99,169,0" Name="txtTc" VerticalAlignment="Top" Width="120" />
+        <Label Content="TC No" Height="28" HorizontalAlignment="Left" Margin="12,97,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,138,169,0" Name="txtDt" VerticalAlignment="Top" Width="120" AcceptsReturn="False" Text="01.01.2000" DataContext="{Binding}" GotFocus="txtDt_GotFocus" LostFocus="txtDt_LostFocus" />
+        <Label Content="Doğum Tarihi" Height="28" HorizontalAlignment="Left" Margin="12,136,0,0" Name="label4" VerticalAlignment="Top" />
+        <Button Content="Kaydet" Height="34" HorizontalAlignment="Left" Margin="112,192,0,0" Name="btnKaydet" VerticalAlignment="Top" Width="92" Background="#FFBEFFF9" Foreground="#FF416841" FontWeight="Bold" FontSize="13" IsDefault="False" Click="button1_Click" IsEnabled="True" x:FieldModifier="public"/>
+        <ListView Background="#FFD4FFF9" ForceCursor="True" Height="323" HorizontalAlignment="Right" ItemsSource="{Binding}" Margin="0,0,12,12" Name="listView1" SelectionMode="Multiple" SnapsToDevicePixels="True" VerticalAlignment="Bottom" Width="340" Grid.ColumnSpan="2">
+            <ListView.View>
+                <GridView RenderOptions.ClearTypeHint="Auto">
+                    <GridViewColumn Header="Ad" DisplayMemberBinding="{Binding Ad}"/>
+                    <GridViewColumn Header="Soyad" DisplayMemberBinding="{Binding Soyad}" />
+                    <GridViewColumn Header="TC" DisplayMemberBinding="{Binding Tc}" />
+                    <GridViewColumn Header="Doğum Tarihi" DisplayMemberBinding="{Binding Dt}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Background="#FFBEFFF9" Content="Arama Sayfası ---&gt;" FontSize="13" FontWeight="Bold" Foreground="#FF416841" Height="34" HorizontalAlignment="Left" IsDefault="False" IsEnabled="True" Margin="12,0,0,12" Name="btnAra" VerticalAlignment="Bottom" Width="192" Click="btnAra_Click" UseLayoutRounding="False" x:FieldModifier="public"/>
+    </Grid>
+</Window>

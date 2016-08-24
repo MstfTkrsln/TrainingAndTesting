@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="NorthwindDevart" namespace="NorthwindDevart" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Employee" table="Employees" schema="dbo">
+    <id name="EmployeeID" type="Int32">
+      <column name="EmployeeID" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="LastName" type="String">
+      <column name="LastName" not-null="true" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="FirstName" type="String">
+      <column name="FirstName" not-null="true" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Title" type="String">
+      <column name="Title" not-null="false" length="30" sql-type="nvarchar" />
+    </property>
+    <property name="TitleOfCourtesy" type="String">
+      <column name="TitleOfCourtesy" not-null="false" length="25" sql-type="nvarchar" />
+    </property>
+    <property name="BirthDate" type="DateTime">
+      <column name="BirthDate" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="HireDate" type="DateTime">
+      <column name="HireDate" not-null="false" sql-type="datetime" />
+    </property>
+    <property name="Address" type="String">
+      <column name="Address" not-null="false" length="60" sql-type="nvarchar" />
+    </property>
+    <property name="City" type="String">
+      <column name="City" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="Region" type="String">
+      <column name="Region" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="PostalCode" type="String">
+      <column name="PostalCode" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Country" type="String">
+      <column name="Country" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="HomePhone" type="String">
+      <column name="HomePhone" not-null="false" length="24" sql-type="nvarchar" />
+    </property>
+    <property name="Extension" type="String">
+      <column name="Extension" not-null="false" length="4" sql-type="nvarchar" />
+    </property>
+    <property name="Photo" type="BinaryBlob">
+      <column name="Photo" not-null="false" length="2147483647" sql-type="image" />
+    </property>
+    <property name="Notes" type="StringClob">
+      <column name="Notes" not-null="false" length="1073741823" sql-type="ntext" />
+    </property>
+    <property name="PhotoPath" type="String">
+      <column name="PhotoPath" not-null="false" length="255" sql-type="nvarchar" />
+    </property>
+    <many-to-one name="Employee_ReportsTo" class="Employee">
+      <column name="ReportsTo" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="Employees_ReportsTo" inverse="true" generic="true">
+      <key>
+        <column name="ReportsTo" />
+      </key>
+      <one-to-many class="Employee" />
+    </set>
+    <set name="EmployeeTerritories" inverse="true" generic="true">
+      <key>
+        <column name="EmployeeID" />
+      </key>
+      <one-to-many class="EmployeeTerritory" />
+    </set>
+    <set name="Orders" inverse="true" generic="true">
+      <key>
+        <column name="EmployeeID" />
+      </key>
+      <one-to-many class="Order" />
+    </set>
+  </class>
+</hibernate-mapping>

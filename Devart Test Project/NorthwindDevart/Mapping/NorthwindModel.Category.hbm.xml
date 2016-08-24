@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="NorthwindDevart" namespace="NorthwindDevart" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Category" table="Categories" schema="dbo">
+    <id name="CategoryID" type="Int32">
+      <column name="CategoryID" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="CategoryName" type="String">
+      <column name="CategoryName" not-null="true" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="Description" type="StringClob">
+      <column name="Description" not-null="false" length="1073741823" sql-type="ntext" />
+    </property>
+    <property name="Picture" type="BinaryBlob">
+      <column name="Picture" not-null="false" length="2147483647" sql-type="image" />
+    </property>
+    <set name="Products" inverse="true" generic="true">
+      <key>
+        <column name="CategoryID" />
+      </key>
+      <one-to-many class="Product" />
+    </set>
+  </class>
+</hibernate-mapping>

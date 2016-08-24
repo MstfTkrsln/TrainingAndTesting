@@ -1,0 +1,23 @@
+﻿<Window x:Class="DataBindIslemleri.Window7"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window7" Height="304" Width="632">
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="Urunler">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="{Binding Path=ProductName}"/>
+                </StackPanel>
+            </DataTemplate>
+        </Grid.Resources>
+        <ListBox Margin="13,19,0,18" Name="lstUrunler" ItemsSource="{Binding}" ItemTemplate="{StaticResource Urunler}" HorizontalAlignment="Left" Width="139" IsSynchronizedWithCurrentItem="True" />
+        <Label Height="23" HorizontalAlignment="Left" Margin="176,24,0,0" Name="label1" VerticalAlignment="Top" Width="61">Ürün Adı</Label>
+        <TextBox Text="{Binding Path=ProductName}" Height="21" Margin="270,24,191,0" Name="txtProductName" VerticalAlignment="Top"></TextBox>
+        <Label Height="23" HorizontalAlignment="Left" Margin="176,50,0,0" Name="label2" VerticalAlignment="Top" Width="120">Birim Fiyatı</Label>
+        <TextBox Text="{Binding Path=ListPrice}" Height="21" Margin="270,50,193,0" Name="txtListPrice" VerticalAlignment="Top" />
+        <Label Height="23" HorizontalAlignment="Left" Margin="176,77,0,0" Name="label3" VerticalAlignment="Top" Width="120">Stok Seviyesi</Label>
+        <TextBox Text="{Binding Path=SafetyStockLevel}" Margin="270,77,193,0" Name="txtSafetyStockLevel" Height="20" VerticalAlignment="Top" />
+        <Image Source="{Binding Path=ThumbNailPhoto}" Margin="182,113,195,20" Name="imgPhoto" />
+        <Label Content="{Binding Path=ProductID}" Height="49" HorizontalAlignment="Right" Margin="0,24,57,0" Name="lblProductID" VerticalAlignment="Top" Width="103" Foreground="Red" FontSize="16" FontWeight="Bold"/>
+    </Grid>
+</Window>

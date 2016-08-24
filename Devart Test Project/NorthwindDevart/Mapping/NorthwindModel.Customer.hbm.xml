@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="NorthwindDevart" namespace="NorthwindDevart" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Customer" table="Customers" schema="dbo">
+    <id name="CustomerID" type="String">
+      <column name="CustomerID" not-null="true" length="5" sql-type="nchar" />
+      <generator class="assigned" />
+    </id>
+    <property name="CompanyName" type="String">
+      <column name="CompanyName" not-null="true" length="40" sql-type="nvarchar" />
+    </property>
+    <property name="ContactName" type="String">
+      <column name="ContactName" not-null="false" length="30" sql-type="nvarchar" />
+    </property>
+    <property name="ContactTitle" type="String">
+      <column name="ContactTitle" not-null="false" length="30" sql-type="nvarchar" />
+    </property>
+    <property name="Address" type="String">
+      <column name="Address" not-null="false" length="60" sql-type="nvarchar" />
+    </property>
+    <property name="City" type="String">
+      <column name="City" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="Region" type="String">
+      <column name="Region" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="PostalCode" type="String">
+      <column name="PostalCode" not-null="false" length="10" sql-type="nvarchar" />
+    </property>
+    <property name="Country" type="String">
+      <column name="Country" not-null="false" length="15" sql-type="nvarchar" />
+    </property>
+    <property name="Phone" type="String">
+      <column name="Phone" not-null="false" length="24" sql-type="nvarchar" />
+    </property>
+    <property name="Fax" type="String">
+      <column name="Fax" not-null="false" length="24" sql-type="nvarchar" />
+    </property>
+    <set name="CustomerDemographics" table="CustomerCustomerDemo" schema="dbo" generic="true">
+      <key not-null="true">
+        <column name="CustomerID" not-null="true" length="5" sql-type="nchar" />
+      </key>
+      <many-to-many class="CustomerDemographic" fetch="join">
+        <column name="CustomerTypeID" not-null="true" length="10" sql-type="nchar" />
+      </many-to-many>
+    </set>
+    <set name="Orders" inverse="true" generic="true">
+      <key>
+        <column name="CustomerID" />
+      </key>
+      <one-to-many class="Order" />
+    </set>
+  </class>
+</hibernate-mapping>

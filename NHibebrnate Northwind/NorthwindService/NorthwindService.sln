@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindService", "NorthwindService.csproj", "{A009886A-397A-4293-B27B-E896F9CE1C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "..\Messages\Messages.csproj", "{73900F1D-8AF0-4061-9282-C11B91AD0692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{5E154EEB-B210-4123-9AEC-1F9318AA1019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dao", "Dao\Dao.csproj", "{8819FB76-D325-472A-9C99-CDF0262B8895}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A009886A-397A-4293-B27B-E896F9CE1C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A009886A-397A-4293-B27B-E896F9CE1C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A009886A-397A-4293-B27B-E896F9CE1C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A009886A-397A-4293-B27B-E896F9CE1C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73900F1D-8AF0-4061-9282-C11B91AD0692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73900F1D-8AF0-4061-9282-C11B91AD0692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73900F1D-8AF0-4061-9282-C11B91AD0692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73900F1D-8AF0-4061-9282-C11B91AD0692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E154EEB-B210-4123-9AEC-1F9318AA1019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E154EEB-B210-4123-9AEC-1F9318AA1019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E154EEB-B210-4123-9AEC-1F9318AA1019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E154EEB-B210-4123-9AEC-1F9318AA1019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8819FB76-D325-472A-9C99-CDF0262B8895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8819FB76-D325-472A-9C99-CDF0262B8895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8819FB76-D325-472A-9C99-CDF0262B8895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8819FB76-D325-472A-9C99-CDF0262B8895}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

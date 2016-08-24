@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="NorthwindDevart" namespace="NorthwindDevart" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Product" table="Products" schema="dbo">
+    <id name="ProductID" type="Int32">
+      <column name="ProductID" not-null="true" precision="10" scale="0" sql-type="int" />
+      <generator class="identity" />
+    </id>
+    <property name="ProductName" type="String">
+      <column name="ProductName" not-null="true" length="40" sql-type="nvarchar" />
+    </property>
+    <property name="SupplierID" type="Int32">
+      <column name="SupplierID" not-null="false" precision="10" scale="0" sql-type="int" />
+    </property>
+    <property name="QuantityPerUnit" type="String">
+      <column name="QuantityPerUnit" not-null="false" length="20" sql-type="nvarchar" />
+    </property>
+    <property name="UnitPrice" type="Decimal">
+      <column name="UnitPrice" default="0" not-null="false" precision="19" scale="4" sql-type="money" />
+    </property>
+    <property name="UnitsInStock" type="Int16">
+      <column name="UnitsInStock" default="0" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="UnitsOnOrder" type="Int16">
+      <column name="UnitsOnOrder" default="0" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="ReorderLevel" type="Int16">
+      <column name="ReorderLevel" default="0" not-null="false" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Discontinued" type="Boolean">
+      <column name="Discontinued" default="0" not-null="true" sql-type="bit" />
+    </property>
+    <many-to-one name="Category" class="Category">
+      <column name="CategoryID" not-null="false" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <set name="OrderDetails" inverse="true" generic="true">
+      <key>
+        <column name="ProductID" />
+      </key>
+      <one-to-many class="OrderDetail" />
+    </set>
+  </class>
+</hibernate-mapping>

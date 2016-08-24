@@ -1,0 +1,93 @@
+﻿body 
+{ background-color: beige;
+    width: auto;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: justify;
+    background-image: url(/Content/img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+   }
+  
+.deneme{ width: 600px;
+    height: auto;
+    background-color: skyblue;
+    color: darkslategrey;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid black;
+    border-style: dot-dash;
+    border-radius: 40px 5px 40px 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-indent: 40px;
+    text-transform: none;
+    }
+  
+#ozel {width: 600px;
+    height: auto;
+    background-color: aqua;
+    color: darkslategrey;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid black;
+    border-style: dot-dash;
+    border-radius:5px 40px 5px 40px;
+    line-height: 30px;
+    text-shadow: 1px 1px 5px green;
+    }
+
+.mavi
+{
+    
+    width: 300px;
+    background-color: skyblue;
+    padding: 20px;
+    position: relative;
+    border:dashed;
+    border-radius: 10px;
+    float: left;
+    z-index: 1;
+   /* display:none ;*/
+}
+.yesil{
+           
+    width: 300px;
+    background-color: lightgreen;
+    padding: 20px;
+    position: relative;
+    float: left;
+    z-index: 2;
+    
+}
+.kirmizi
+{
+    margin: auto;
+    width: 300px;
+    background-color: lightcoral;
+    padding: 20px;
+    clear: both;
+    z-index: 3;
+    visibility: visible;
+    opacity: 0.50;
+    }
+
+#telif{width: auto;
+    height: auto;
+    background-color: aqua;
+    color: darkslategrey;
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid black;
+    border-style: dot-dash;
+    border-radius:5px 40px 5px 40px;
+    position: fixed;
+    }

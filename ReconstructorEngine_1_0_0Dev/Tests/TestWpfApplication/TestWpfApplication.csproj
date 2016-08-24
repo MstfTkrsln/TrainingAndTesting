@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{208CF11D-4854-4EF1-B3CF-DD057A800D90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestWpfApplication</RootNamespace>
+    <AssemblyName>TestWpfApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\TestLibs\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.AcroPDFLib">
+      <HintPath>..\TestLibs\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\TestLibs\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\TestLibs\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel">
+      <HintPath>..\TestLibs\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\TestLibs\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\TestLibs\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AcroPDFLib">
+      <HintPath>..\TestLibs\Interop.AcroPDFLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interpress.ApplicationLayer.Components.WInterComponents">
+      <HintPath>..\TestLibs\Interpress.ApplicationLayer.Components.WInterComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.BusinessLayer.BaseManager">
+      <HintPath>..\TestLibs\Interpress.BusinessLayer.BaseManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.BusinessLayer.IManagerBase">
+      <HintPath>..\TestLibs\Interpress.BusinessLayer.IManagerBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.DataAccessLayer.Dao">
+      <HintPath>..\TestLibs\Interpress.DataAccessLayer.Dao.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Entities">
+      <HintPath>..\TestLibs\Interpress.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Entities.Analiz">
+      <HintPath>..\TestLibs\Interpress.Entities.Analiz.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Entities.Arsiv">
+      <HintPath>..\TestLibs\Interpress.Entities.Arsiv.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Entities.ArsivReporting">
+      <HintPath>..\TestLibs\Interpress.Entities.ArsivReporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Entities.Basin">
+      <HintPath>..\TestLibs\Interpress.Entities.Basin.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Entities.Dbt">
+      <HintPath>..\TestLibs\Interpress.Entities.Dbt.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Entities.HaberAjans">
+      <HintPath>..\TestLibs\Interpress.Entities.HaberAjans.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Entities.MedyaRehberi">
+      <HintPath>..\TestLibs\Interpress.Entities.MedyaRehberi.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Entities.Portal">
+      <HintPath>..\TestLibs\Interpress.Entities.Portal.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.AuthenticationAndAuthorization">
+      <HintPath>..\TestLibs\Interpress.Library.AuthenticationAndAuthorization.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.Config">
+      <HintPath>..\TestLibs\Interpress.Library.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.DbtLibrary">
+      <HintPath>..\TestLibs\Interpress.Library.DbtLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.Exceptions">
+      <HintPath>..\TestLibs\Interpress.Library.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.FFMpegLib.Waveout">
+      <HintPath>..\TestLibs\Interpress.Library.FFMpegLib.Waveout.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.IOC">
+      <HintPath>..\TestLibs\Interpress.Library.IOC.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.Lock">
+      <HintPath>..\TestLibs\Interpress.Library.Lock.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.Log">
+      <HintPath>..\TestLibs\Interpress.Library.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.ProxyArsiv">
+      <HintPath>..\TestLibs\Interpress.Library.ProxyArsiv.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.ProxyBase">
+      <HintPath>..\TestLibs\Interpress.Library.ProxyBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Library.ProxyDbt">
+      <HintPath>..\TestLibs\Interpress.Library.ProxyDbt.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Messages.MessageArsiv">
+      <HintPath>..\TestLibs\Interpress.Messages.MessageArsiv.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Messages.MessageArsivReporting">
+      <HintPath>..\TestLibs\Interpress.Messages.MessageArsivReporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Messages.MessageBase">
+      <HintPath>..\TestLibs\Interpress.Messages.MessageBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.Messages.MessageDbt">
+      <HintPath>..\TestLibs\Interpress.Messages.MessageDbt.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.ServiceLayer.ArsivServiceClient">
+      <HintPath>..\TestLibs\Interpress.ServiceLayer.ArsivServiceClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.ServiceLayer.BaseService">
+      <HintPath>..\TestLibs\Interpress.ServiceLayer.BaseService.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.ServiceLayer.BaseServiceClient">
+      <HintPath>..\TestLibs\Interpress.ServiceLayer.BaseServiceClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.ServiceLayer.DbtServiceClient">
+      <HintPath>..\TestLibs\Interpress.ServiceLayer.DbtServiceClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.ServiceLayer.IArsivService">
+      <HintPath>..\TestLibs\Interpress.ServiceLayer.IArsivService.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.ServiceLayer.IBaseService">
+      <HintPath>..\TestLibs\Interpress.ServiceLayer.IBaseService.dll</HintPath>
+    </Reference>
+    <Reference Include="Interpress.ServiceLayer.IDbtService">
+      <HintPath>..\TestLibs\Interpress.ServiceLayer.IDbtService.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\TestLibs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\TestLibs\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\TestLibs\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Linq">
+      <HintPath>..\TestLibs\NHibernate.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls, Version=2011.1.315.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestLibs\Telerik.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.DataVisualization, Version=2011.1.315.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestLibs\Telerik.Windows.Controls.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Docking, Version=2011.1.315.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestLibs\Telerik.Windows.Controls.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Gauge, Version=2011.1.315.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestLibs\Telerik.Windows.Controls.Gauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.GridView, Version=2011.1.315.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestLibs\Telerik.Windows.Controls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Input, Version=2011.1.315.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestLibs\Telerik.Windows.Controls.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Navigation, Version=2011.1.315.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestLibs\Telerik.Windows.Controls.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.RibbonBar, Version=2011.1.315.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestLibs\Telerik.Windows.Controls.RibbonBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Data, Version=2011.1.315.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestLibs\Telerik.Windows.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="TestDbtLibrary.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\ReconstructorEngine\ReconstructorEngine.csproj">
+      <Project>{4C0DB706-70BD-4ABC-ACAF-FFC291E7597C}</Project>
+      <Name>ReconstructorEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

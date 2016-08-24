@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfBook3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Ellipse Fill="Beige" Stroke="CadetBlue" StrokeThickness="5" Margin="10,10,576,420"></Ellipse>
+        <Ellipse Fill="Aqua" Stroke="Blue" StrokeThickness="3" Margin="46,44,704,500" ></Ellipse>
+        <Ellipse Fill="Aqua" Margin="131,44,616,500" Stroke="Blue" StrokeThickness="3" />
+        <Line X1="125" X2="70" Y1="100" Y2="100" Stroke="BlueViolet" StrokeDashArray="1"  StrokeDashCap="Round" StrokeThickness="5"></Line>
+        <Rectangle Fill="Brown" Margin="93,58,666,472" RadiusX="20" RadiusY="20" StrokeThickness="3" Stroke="Red"></Rectangle>
+        
+        <Path Margin="0,-12,0,12">
+            <Path.Data>
+                <EllipseGeometry RadiusX="50" RadiusY="100" Center="100,250"> </EllipseGeometry> 
+                
+            </Path.Data>
+        </Path>
+        <Path Fill="BlueViolet" StrokeThickness="5" Stroke="Black" Height="200" Width="200" Margin="12,349,566,12">
+            <Path.Data>
+                <RectangleGeometry Rect="0,0,2000,200" ></RectangleGeometry>
+          </Path.Data>
+        </Path>
+        
+        <Path Fill="DarkOrange" Height="200" Width="200" Margin="229,10,349,352">
+            <Path.Data>
+                <GeometryGroup> <!--Birden fazla şekil çizilir-->
+                    <RectangleGeometry Rect="0,0,200,200" RadiusX="50" RadiusY="500"></RectangleGeometry>
+                    
+                </GeometryGroup>
+                
+            </Path.Data>
+        </Path>
+        
+        <Polygon Points="300,300 400,400 500,550" Fill="Blue" FillRule="Nonzero" Margin="59,-61,-59,61"></Polygon>
+        <Polyline Points="500,100,520,200,540,100,560,50,580,100,600,200,620,20,630,100" Stroke="Red"></Polyline>
+    </Grid>
+</Window>

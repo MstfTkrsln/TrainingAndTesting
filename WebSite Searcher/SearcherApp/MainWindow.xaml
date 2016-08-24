@@ -1,0 +1,13 @@
+﻿<Window x:Class="SearcherApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="272" Width="337">
+    <Grid>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="88,75,0,0" Name="txtKeyword" VerticalAlignment="Top" Width="176" />
+        <Button Content="Search The Site" Height="46" HorizontalAlignment="Left" Margin="87,135,0,0" Name="btnSearch" VerticalAlignment="Top" Width="177" Click="button1_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="88,24,0,0" Name="txtSite" VerticalAlignment="Top" Width="176" />
+        <Label Content="Web Site" Height="28" HorizontalAlignment="Left" Margin="12,22,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="KeyWord" Height="28" HorizontalAlignment="Left" Margin="12,70,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="102,198,0,0" Name="txtcount" VerticalAlignment="Top" Width="120" />
+    </Grid>
+</Window>

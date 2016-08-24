@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="NorthwindDevart" namespace="NorthwindDevart" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="OrderDetail" table="`Order Details`" schema="dbo">
+    <composite-id>
+      <key-property name="OrderID" type="Int32">
+        <column name="OrderID" not-null="true" precision="10" scale="0" sql-type="int" />
+      </key-property>
+      <key-property name="ProductID" type="Int32">
+        <column name="ProductID" not-null="true" precision="10" scale="0" sql-type="int" />
+      </key-property>
+    </composite-id>
+    <property name="UnitPrice" type="Decimal">
+      <column name="UnitPrice" default="0" not-null="true" precision="19" scale="4" sql-type="money" />
+    </property>
+    <property name="Quantity" type="Int16">
+      <column name="Quantity" default="1" not-null="true" precision="5" scale="0" sql-type="smallint" />
+    </property>
+    <property name="Discount" type="Single">
+      <column name="Discount" default="0" not-null="true" precision="24" sql-type="real" />
+    </property>
+    <many-to-one name="Order" class="Order">
+      <column name="OrderID" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+    <many-to-one name="Product" class="Product">
+      <column name="ProductID" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

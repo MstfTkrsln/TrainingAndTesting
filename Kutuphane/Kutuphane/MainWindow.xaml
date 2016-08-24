@@ -1,0 +1,21 @@
+﻿<Window x:Class="Kutuphane.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="522" Width="820" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid AutoGenerateColumns="True" Height="309" HorizontalAlignment="Left" Margin="12,12,0,0" Name="datagridKitaplar" VerticalAlignment="Top" Width="786">
+         
+        </DataGrid>
+        <Label Content="Adı" Height="28" HorizontalAlignment="Left" Margin="12,335,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Sayfa Sayısı" Height="28" HorizontalAlignment="Left" Margin="12,369,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Kategori" Height="28" HorizontalAlignment="Left" Margin="12,403,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="99,340,0,0" Name="txtAdi" VerticalAlignment="Top" Width="257" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,374,442,0" Name="txtSayfa" VerticalAlignment="Top" Width="257" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="99,408,0,0" Name="cmbKategori" VerticalAlignment="Top" Width="257" />
+        <Button Content="Ekle" Height="34" HorizontalAlignment="Left" Margin="393,340,0,0" Name="btnEkle" VerticalAlignment="Top" Width="102" Click="btnEkle_Click" />
+        <Label Content="YAZAR" Height="28" HorizontalAlignment="Left" Margin="12,443,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,448,442,0" Name="txtYazar" VerticalAlignment="Top" Width="257" />
+        <Button Content="Sil" Height="34" HorizontalAlignment="Left" Margin="516,340,0,0" Name="btnSil" VerticalAlignment="Top" Width="102" Click="btnSil_Click" />
+        <Button Content="Güncelle" Height="34" HorizontalAlignment="Left" Margin="636,340,0,0" Name="btnUpdate" VerticalAlignment="Top" Width="102" Click="btnUpdate_Click" />
+    </Grid>
+</Window>

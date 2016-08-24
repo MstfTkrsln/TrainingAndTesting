@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="NorthwindDevart" namespace="NorthwindDevart" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="EmployeeTerritory" table="EmployeeTerritories" schema="dbo">
+    <composite-id>
+      <key-property name="EmployeeID" type="Int32">
+        <column name="EmployeeID" not-null="true" precision="10" scale="0" sql-type="int" />
+      </key-property>
+      <key-property name="TerritoryID" type="String">
+        <column name="TerritoryID" not-null="true" length="20" sql-type="nvarchar" />
+      </key-property>
+    </composite-id>
+    <many-to-one name="Employee" class="Employee">
+      <column name="EmployeeID" not-null="true" precision="10" scale="0" sql-type="int" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

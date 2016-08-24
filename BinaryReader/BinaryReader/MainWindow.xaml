@@ -1,0 +1,27 @@
+﻿<Window x:Class="BinaryReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Binary" Height="469" Width="669">
+    <Grid>
+        <Button Content="Binary Write" Height="40" HorizontalAlignment="Right" Margin="0,167,528,0" Name="btnWrite" VerticalAlignment="Top" Width="107" Foreground="Navy" FontSize="14" FontWeight="Bold" Background="#FF93E5FF" Click="btnWrite_Click"></Button>
+        <Button Content="Binary Read" FontSize="14" FontWeight="Bold" Foreground="Navy" Height="40" HorizontalAlignment="Right" Margin="0,167,407,0" Name="btnRead" VerticalAlignment="Top" Width="107" Background="#FF93E5FF" Click="btnRead_Click"></Button>
+        <Label Content="ID" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" FontSize="13" FontWeight="Bold" Foreground="Navy" />
+        <TextBox Height="20" HorizontalAlignment="Left" Margin="92,15,0,0" Name="txtId" VerticalAlignment="Top" Width="120" OpacityMask="Black" Background="#FFB7FFFD" TextChanged="txt_TurkishCharacters" />
+        <Label Content="Name" FontSize="13" FontWeight="Bold" Foreground="Navy" Height="28" HorizontalAlignment="Left" Margin="12,46,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Background="#FFB7FFFD" Height="20" HorizontalAlignment="Left" Margin="92,49,0,0" Name="txtName" OpacityMask="Black" VerticalAlignment="Top" Width="120" TextChanged="txt_TurkishCharacters" />
+        <Label Content="Surname" FontSize="13" FontWeight="Bold" Foreground="Navy" Height="28" HorizontalAlignment="Left" Margin="12,84,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Background="#FFB7FFFD" Height="20" HorizontalAlignment="Left" Margin="92,87,0,0" Name="txtSurname" OpacityMask="Black" VerticalAlignment="Top" Width="120" TextChanged="txt_TurkishCharacters" />
+        <Label Content="Age" FontSize="13" FontWeight="Bold" Foreground="Navy" Height="28" HorizontalAlignment="Left" Margin="12,124,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Background="#FFB7FFFD" Height="20" HorizontalAlignment="Left" Margin="92,127,0,0" Name="txtAge" OpacityMask="Black" VerticalAlignment="Top" Width="120" TextChanged="txt_TurkishCharacters" />
+        <Button Background="#FF93E5FF" Content="Delete All " FontSize="14" FontWeight="Bold" Foreground="Red" Height="40" HorizontalAlignment="Right" Margin="0,313,469,0" Name="btnDelete" VerticalAlignment="Top" Width="107" Click="btnDelete_Click" />
+        <ListBox Height="403" HorizontalAlignment="Left" Margin="246,15,0,0" Name="listFile" VerticalAlignment="Top" Width="389" Background="#FFB7FFFD" SelectionChanged="listFile_SelectionChanged" />
+        <Button Background="#FF93E5FF" Content="Update" FontSize="14" FontWeight="Bold" Foreground="Navy" Height="40" HorizontalAlignment="Right" Margin="0,237,528,0" Name="btnUpdate" VerticalAlignment="Top" Width="107" Click="btnUpdate_Click" />
+        <Button Background="#FF93E5FF" Content="Delete" FontSize="14" FontWeight="Bold" Foreground="Navy" Height="40" HorizontalAlignment="Right" Margin="0,237,407,0" Name="btnDeleteRecord" VerticalAlignment="Top" Width="107" Click="btnDeleteRecord_Click" />
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF309B90" Offset="0" />
+                <GradientStop Color="#FF45FFF3" Offset="0.377" />
+            </LinearGradientBrush>
+        </Grid.Background>
+    </Grid>
+</Window>

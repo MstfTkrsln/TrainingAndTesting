@@ -1,0 +1,10 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="269" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Meesage 1" Height="23" HorizontalAlignment="Left" Margin="62,23,0,0" Name="btnMessage1" VerticalAlignment="Top" Width="113" Click="btnMessage1_Click" />
+        <Button Content="Message 2" Height="23" HorizontalAlignment="Left" Margin="62,65,0,0" Name="btnMessage2" VerticalAlignment="Top" Width="113" Click="btnMessage2_Click" />
+        
+    </Grid>
+</Window>

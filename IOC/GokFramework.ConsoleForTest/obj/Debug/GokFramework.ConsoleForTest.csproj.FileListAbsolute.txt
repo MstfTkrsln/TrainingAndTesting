@@ -1,0 +1,38 @@
+c:\users\gokhan\documents\visual studio 2013\Projects\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.exe.config
+c:\users\gokhan\documents\visual studio 2013\Projects\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.exe
+c:\users\gokhan\documents\visual studio 2013\Projects\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.pdb
+c:\users\gokhan\documents\visual studio 2013\Projects\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ORM.dll
+c:\users\gokhan\documents\visual studio 2013\Projects\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ORM.pdb
+c:\users\gokhan\documents\visual studio 2013\Projects\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.csprojResolveAssemblyReference.cache
+c:\users\gokhan\documents\visual studio 2013\Projects\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.exe
+c:\users\gokhan\documents\visual studio 2013\Projects\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.pdb
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.exe.config
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.exe
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.pdb
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.exe
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.pdb
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ORM.dll
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ORM.pdb
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.csprojResolveAssemblyReference.cache
+F:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.exe.config
+F:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.exe
+F:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.pdb
+F:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.exe
+F:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.pdb
+F:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ORM.dll
+F:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ORM.pdb
+F:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.csprojResolveAssemblyReference.cache
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.IoCContainer.dll
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.IoCContainer.pdb
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.Logger.dll
+H:\1 - PROJELER\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.Logger.pdb
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.exe.config
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.exe
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.pdb
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.exe
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.ConsoleForTest.pdb
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.IoCContainer.dll
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.Logger.dll
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.IoCContainer.pdb
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\bin\Debug\GokFramework.Logger.pdb
+C:\Users\GOKHAN\Desktop\GokFramework\GokFramework.ConsoleForTest\obj\Debug\GokFramework.ConsoleForTest.csprojResolveAssemblyReference.cache

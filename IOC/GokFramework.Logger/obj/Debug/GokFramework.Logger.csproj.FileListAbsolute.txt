@@ -1,0 +1,5 @@
+H:\1 - PROJELER\GokFramework\GokFramework.Logger\bin\Debug\GokFramework.Logger.dll
+H:\1 - PROJELER\GokFramework\GokFramework.Logger\bin\Debug\GokFramework.Logger.pdb
+H:\1 - PROJELER\GokFramework\GokFramework.Logger\obj\Debug\GokFramework.Logger.dll
+H:\1 - PROJELER\GokFramework\GokFramework.Logger\obj\Debug\GokFramework.Logger.pdb
+H:\1 - PROJELER\GokFramework\GokFramework.Logger\obj\Debug\GokFramework.Logger.csprojResolveAssemblyReference.cache
